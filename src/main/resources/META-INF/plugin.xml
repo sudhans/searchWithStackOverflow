@@ -2,17 +2,24 @@
 <idea-plugin>
     <id>com.github.sudhans.searchwithstackoverflow</id>
     <name>searchWithStackOverflow</name>
-    <vendor>sudhans</vendor>
+    <vendor>MSD</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>Git4Idea</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.sudhans.searchwithstackoverflow.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.sudhans.searchwithstackoverflow.services.MyProjectService"/>
+
     </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.sudhans.searchwithstackoverflow.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
+    <actions>
+        <group id="search.contextmenu" text="Search With StackOverflow" popup="false">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <separator/>
+            <action id="search.stackoverflow" text="Search With StackOverflow"
+                    class="com.github.sudhans.searchwithstackoverflow.actions.StackOverflowSearchAction"/>
+            <separator/>
+        </group>
+
+    </actions>
+
 </idea-plugin>
