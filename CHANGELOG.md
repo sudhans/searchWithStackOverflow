@@ -1,7 +1,7 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# searchWithStackOverflow Changelog
+# SearchWithStackOverflow Changelog
 
-## [Unreleased]
+## [1.0.0]
 ### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+- Added "Search With StackOverflow" Context Menu Item for Editor and Console Editor

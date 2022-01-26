@@ -1,18 +1,18 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.sudhans.searchwithstackoverflow</id>
-    <name>searchWithStackOverflow</name>
+    <name>SearchWithStackOverflow</name>
     <vendor>MSD</vendor>
 
     <depends>com.intellij.modules.platform</depends>
-    <depends>Git4Idea</depends>
 
     <extensions defaultExtensionNs="com.intellij">
 
     </extensions>
 
     <actions>
-        <group id="search.contextmenu" text="Search With StackOverflow" popup="false">
+        <group id="search.contextmenu" text="Search With StackOverflow" popup="false" icon="AllIcons.Actions.Search">
+            <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
             <separator/>
             <action id="search.stackoverflow" text="Search With StackOverflow"
