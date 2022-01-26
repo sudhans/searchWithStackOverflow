@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>com.github.sudhans.searchwithstackoverflow</id>
     <name>SearchWithStackOverflow</name>
-    <vendor>MSD</vendor>
+    <vendor>Madhusudhan Sarvodhaya</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
