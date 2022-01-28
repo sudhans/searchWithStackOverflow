@@ -2,12 +2,12 @@ package com.github.sudhans.searchwithstackoverflow.actions
 
 import com.github.sudhans.searchwithstackoverflow.util.STACKOVERFLOW_SEARCH_URL
 import com.intellij.ide.BrowserUtil
-import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
+import com.intellij.openapi.project.DumbAwareAction
 import com.intellij.openapi.util.text.StringUtil
 
-class StackOverflowSearchAction : AnAction() {
+class StackOverflowSearchAction : DumbAwareAction() {
 
     override fun actionPerformed(e: AnActionEvent) {
         e.project?.let { project ->

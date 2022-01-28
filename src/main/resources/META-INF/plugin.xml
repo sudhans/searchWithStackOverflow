@@ -11,11 +11,11 @@
     </extensions>
 
     <actions>
-        <group id="search.contextmenu" text="Search With StackOverflow" popup="false" icon="AllIcons.Actions.Search">
+        <group id="search.contextmenu" text="Search with StackOverflow" popup="false" icon="AllIcons.Actions.Search">
             <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
             <separator/>
-            <action id="search.stackoverflow" text="Search With StackOverflow"
+            <action id="search.stackoverflow" text="Search with StackOverflow"
                     class="com.github.sudhans.searchwithstackoverflow.actions.StackOverflowSearchAction"/>
             <separator/>
         </group>
