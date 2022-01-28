@@ -7,6 +7,8 @@ either from the editor or console.
 
 Compatible with Android Studio and be used with Logcat, Run and Debug views as well.
 
+Search option will be available even while the IDE is indexing.
+
 Note: Does not work with selected text from a terminal window.
 
 <!-- Plugin description end -->
