@@ -25,5 +25,6 @@ Note: Does not work with selected text from a terminal window.
   Download the [latest release](https://github.com/sudhans/searchWithStackOverflow/releases/latest) and install it manually using
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
-
+Available in Intellij Marketplace as well:
+https://plugins.jetbrains.com/plugin/18499-searchwithstackoverflow
 ---
