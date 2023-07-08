@@ -6,6 +6,7 @@ import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.project.DumbAwareAction
 import com.intellij.openapi.util.text.StringUtil
+import com.intellij.terminal.JBTerminalWidget
 
 class StackOverflowSearchAction : DumbAwareAction() {
 
@@ -32,10 +33,16 @@ class StackOverflowSearchAction : DumbAwareAction() {
                 selectedText?.trim()
             }
         }
+        selectedText?.let {
+            if (it.isEmpty()) {
+                selectedText = e.getData(JBTerminalWidget.SELECTED_TEXT_DATA_KEY)
+            }
+        }
+
         return selectedText
     }
 
     override fun update(e: AnActionEvent) {
-        e.presentation.isEnabledAndVisible = StringUtil.isNotEmpty(getSelectedText(e))
+        e.presentation.isEnabledAndVisible = getSelectedText(e).isNullOrBlank().not()
     }
 }
