@@ -2,7 +2,17 @@
 <idea-plugin>
     <id>com.github.sudhans.searchwithstackoverflow</id>
     <name>SearchWithStackOverflow</name>
-    <vendor>Madhusudhan Sarvodhaya</vendor>
+    <vendor email="madhusudhansarvodhaya@gmail.com">Madhusudhan Sarvodhaya</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+     Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+     Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+    This plugin adds context menu item - "Search with StackOverflow" with which you can search for selected text either from the editor or console.<br>
+    Compatible with Android Studio and be used with Logcat, Run and Debug views as well.<br>
+    <i> Note: Does not work with selected text from a terminal window. </i>
+
+  ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
 
